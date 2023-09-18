@@ -63,12 +63,9 @@ function App() {
               </form>
             </div>
           </div>
-
-          <img
-            className="main-image"
-            src="/illustration-sign-up-desktop.svg"
-            alt="Illustration"
-          />
+          <div className="main-image">
+            <img src="/illustration-sign-up-desktop.svg" alt="Illustration" />
+          </div>
         </div>
       ) : (
         <div className="success-container">
