@@ -4,7 +4,7 @@ function App() {
   const [submitted, setSubmitted] = useState(false);
   const [email, setEmail] = useState("");
 
-  const handleSubmite = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(!submitted);
   };
@@ -67,7 +67,7 @@ function App() {
                 </div>
               </div>
               <form
-                onSubmit={handleSubmite}
+                onSubmit={handleSubmit}
                 style={{
                   display: "flex",
                   flexDirection: "column",
