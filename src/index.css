@@ -150,7 +150,7 @@ form button {
 
   .main-container {
     flex-direction: column-reverse;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     height: 100%;
     border-radius: 0;
     padding: 0px;
