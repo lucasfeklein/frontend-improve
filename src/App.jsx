@@ -19,13 +19,26 @@ function App() {
           <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-          <div>
-            <p>Product discovery and building what matters</p>
-            <p>Measuring to ensure updates are a success</p>
-            <p>And much more!</p>
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "10px" }}
+          >
+            <div style={{ display: "flex", gap: "15px" }}>
+              <img src="/icon-success.svg" style={{ width: "20px" }} />
+              Product discovery and building what matters
+            </div>
+            <div style={{ display: "flex", gap: "15px" }}>
+              <img src="/icon-success.svg" style={{ width: "20px" }} />
+              Measuring to ensure updates are a success
+            </div>
+            <div style={{ display: "flex", gap: "15px" }}>
+              <img src="/icon-success.svg" style={{ width: "20px" }} />
+              And much more!
+            </div>
           </div>
-
-          <input type="email" style={{ width: "100%" }} />
+          <label>
+            Email adress:
+            <input type="email" style={{ width: "100%" }} />
+          </label>
           <button style={{ width: "100%" }}>
             Subscribe to monthly newsletter
           </button>
