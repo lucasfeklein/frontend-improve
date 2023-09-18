@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="container">
       {!submitted ? (
-        <div className="form-container">
+        <div className="main-container">
           <div>
             <div className="form-content">
               <h1 className="title">Stay updated!</h1>
@@ -64,7 +64,11 @@ function App() {
             </div>
           </div>
 
-          <img src="/illustration-sign-up-desktop.svg" alt="Illustration" />
+          <img
+            className="main-image"
+            src="/illustration-sign-up-desktop.svg"
+            alt="Illustration"
+          />
         </div>
       ) : (
         <div className="success-container">
