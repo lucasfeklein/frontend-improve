@@ -25,3 +25,93 @@ button:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  gap: 20px;
+  max-width: 830px;
+  height: 550px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.title {
+  color: hsl(234, 29%, 20%);
+  font-size: 55px;
+}
+
+.subtitle {
+  font-size: 18px;
+}
+
+.check-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.email-label {
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.email-input {
+  height: 50px;
+  width: 100%;
+  margin-top: 7px;
+  border-radius: 7px;
+  padding-left: 20px;
+  border: 1px solid black;
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 30px;
+  width: 400px;
+}
+
+.success-icon {
+  width: 20px;
+}
+
+.thanks-success-icon {
+  width: 40px;
+}
+
+.success-title {
+  color: hsl(234, 29%, 20%);
+  font-size: 55px;
+  line-height: 55px;
+}
+
+form button {
+  margin-top: 20px;
+}

@@ -10,129 +10,78 @@ function App() {
   };
 
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className="container">
       {!submitted ? (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            backgroundColor: "white",
-            padding: "20px",
-            borderRadius: "30px",
-            gap: "30px",
-            maxWidth: "830px",
-            height: "550px",
-          }}
-        >
+        <div className="form-container">
           <div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "20px",
-                padding: "30px",
-              }}
-            >
-              <h1 style={{ color: "hsl(234, 29%, 20%)", fontSize: "55px" }}>
-                Stay updated!
-              </h1>
-              <p>Join 60,000+ product managers receiving monthly updates on:</p>
-
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "10px",
-                }}
-              >
-                <div style={{ display: "flex", gap: "15px" }}>
-                  <img src="/icon-success.svg" style={{ width: "20px" }} />
+            <div className="form-content">
+              <h1 className="title">Stay updated!</h1>
+              <p className="subtitle">
+                Join 60,000+ product managers receiving monthly updates on:
+              </p>
+              <div className="check-container">
+                <div className="checkbox-item">
+                  <img
+                    src="/icon-success.svg"
+                    alt="Checkmark Icon"
+                    className="success-icon"
+                  />
                   Product discovery and building what matters
                 </div>
-                <div style={{ display: "flex", gap: "15px" }}>
-                  <img src="/icon-success.svg" style={{ width: "20px" }} />
+                <div className="checkbox-item">
+                  <img
+                    src="/icon-success.svg"
+                    alt="Checkmark Icon"
+                    className="success-icon"
+                  />
                   Measuring to ensure updates are a success
                 </div>
-                <div style={{ display: "flex", gap: "15px" }}>
-                  <img src="/icon-success.svg" style={{ width: "20px" }} />
+                <div className="checkbox-item">
+                  <img
+                    src="/icon-success.svg"
+                    alt="Checkmark Icon"
+                    className="success-icon"
+                  />
                   And much more!
                 </div>
               </div>
-              <form
-                onSubmit={handleSubmit}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "20px",
-                }}
-              >
-                <label
-                  style={{
-                    fontWeight: "700",
-                    fontSize: "12px",
-                    marginTop: "10px",
-                  }}
-                >
-                  Email adress:
+              <form onSubmit={handleSubmit}>
+                <label htmlFor="email" className="email-label">
+                  Email address:
                   <input
                     type="email"
+                    id="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="example@hotmail.com"
-                    style={{
-                      height: "50px",
-                      width: "100%",
-                      marginTop: "7px",
-                      borderRadius: "7px",
-                      paddingLeft: "20px",
-                      border: "1px solid black",
-                    }}
+                    className="email-input"
                   />
                 </label>
-                <button>Subscribe to monthly newsletter</button>
+                <button type="submit" className="submit-button">
+                  Subscribe to monthly newsletter
+                </button>
               </form>
             </div>
           </div>
 
           <img
             src="/illustration-sign-up-desktop.svg"
+            alt="Illustration"
             style={{ height: "100%" }}
           />
         </div>
       ) : (
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "30px",
-            backgroundColor: "white",
-            padding: "30px 40px",
-            borderRadius: "30px",
-            width: "400px",
-          }}
-        >
-          <img style={{ width: "50px" }} src="/icon-success.svg" />
-          <h2
-            style={{
-              color: "hsl(234, 29%, 20%)",
-              fontSize: "55px",
-              lineHeight: "55px",
-            }}
-          >
-            Thanks for subscribing!
-          </h2>
-          <p>
+        <div className="success-container">
+          <img
+            src="/icon-success.svg"
+            alt="Checkmark Icon"
+            className="thanks-success-icon"
+          />
+          <h2 className="success-title">Thanks for subscribing!</h2>
+          <p className="success-message">
             A confirmation email has been sent to{" "}
-            <span style={{ fontWeight: "bold" }}>{email}</span>. Please open it
-            and click the button inside to confirm your subscription.
+            <span className="success-email">{email}</span>. Please open it and
+            click the button inside to confirm your subscription.
           </p>
           <button>Dismiss message</button>
         </div>
