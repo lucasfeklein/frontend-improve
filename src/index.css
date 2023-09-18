@@ -155,7 +155,6 @@ form button {
     border-radius: 0;
     padding: 0px;
     gap: 0;
-    overflow-y: hidden;
   }
 
   .success-container {
