@@ -98,6 +98,12 @@ button:hover {
   width: 400px;
 }
 
+.success-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .success-icon {
   width: 20px;
 }
@@ -136,10 +142,12 @@ form button {
 
   .success-container {
     height: 100%;
+    width: 100%;
     border-radius: 0;
+    justify-content: space-between;
   }
 
-  .success-container button {
-    align-self: flex-end;
+  .success-content {
+    margin-top: 120px;
   }
 }

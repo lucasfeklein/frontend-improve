@@ -72,17 +72,19 @@ function App() {
         </div>
       ) : (
         <div className="success-container">
-          <img
-            src="/icon-success.svg"
-            alt="Checkmark Icon"
-            className="thanks-success-icon"
-          />
-          <h2 className="success-title">Thanks for subscribing!</h2>
-          <p className="success-message">
-            A confirmation email has been sent to{" "}
-            <span className="success-email">{email}</span>. Please open it and
-            click the button inside to confirm your subscription.
-          </p>
+          <div className="success-content">
+            <img
+              src="/icon-success.svg"
+              alt="Checkmark Icon"
+              className="thanks-success-icon"
+            />
+            <h2 className="success-title">Thanks for subscribing!</h2>
+            <p className="success-message">
+              A confirmation email has been sent to{" "}
+              <span className="success-email">{email}</span>. Please open it and
+              click the button inside to confirm your subscription.
+            </p>
+          </div>
           <button>Dismiss message</button>
         </div>
       )}
