@@ -64,11 +64,7 @@ function App() {
             </div>
           </div>
 
-          <img
-            src="/illustration-sign-up-desktop.svg"
-            alt="Illustration"
-            style={{ height: "100%" }}
-          />
+          <img src="/illustration-sign-up-desktop.svg" alt="Illustration" />
         </div>
       ) : (
         <div className="success-container">
