@@ -112,7 +112,7 @@ function App() {
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: "20px",
+            gap: "30px",
             backgroundColor: "white",
             padding: "30px 40px",
             borderRadius: "30px",
@@ -120,12 +120,19 @@ function App() {
           }}
         >
           <img style={{ width: "50px" }} src="/icon-success.svg" />
-          <h2 style={{ color: "hsl(234, 29%, 20%)", fontSize: "55px" }}>
+          <h2
+            style={{
+              color: "hsl(234, 29%, 20%)",
+              fontSize: "55px",
+              lineHeight: "55px",
+            }}
+          >
             Thanks for subscribing!
           </h2>
           <p>
-            A confirmation email has been sent to <span>{email}</span>. Please
-            open it and click the button inside to confirm your subscription.
+            A confirmation email has been sent to{" "}
+            <span style={{ fontWeight: "bold" }}>{email}</span>. Please open it
+            and click the button inside to confirm your subscription.
           </p>
           <button>Dismiss message</button>
         </div>
