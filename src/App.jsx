@@ -84,6 +84,8 @@ function App() {
                   Email adress:
                   <input
                     type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     placeholder="example@hotmail.com"
                     style={{
                       height: "50px",
