@@ -82,7 +82,6 @@ function App() {
                 >
                   Email adress:
                   <input
-                    required
                     type="email"
                     placeholder="example@hotmail.com"
                     style={{
@@ -102,11 +101,19 @@ function App() {
 
           <img
             src="/illustration-sign-up-desktop.svg"
-            style={{ width: "340px" }}
+            style={{ height: "100%" }}
           />
         </div>
       ) : (
-        <div>oi</div>
+        <div
+          style={{
+            backgroundColor: "white",
+            padding: "20px",
+            borderRadius: "30px",
+          }}
+        >
+          <img src="" />
+        </div>
       )}
     </div>
   );
