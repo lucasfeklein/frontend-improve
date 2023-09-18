@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function App() {
   const [submitted, setSubmitted] = useState(false);
+  const [email, setEmail] = useState("");
 
   const handleSubmite = (e) => {
     e.preventDefault();
@@ -107,12 +108,24 @@ function App() {
       ) : (
         <div
           style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "20px",
             backgroundColor: "white",
-            padding: "20px",
+            padding: "30px 40px",
             borderRadius: "30px",
+            width: "400px",
           }}
         >
-          <img src="" />
+          <img style={{ width: "50px" }} src="/icon-success.svg" />
+          <h2 style={{ color: "hsl(234, 29%, 20%)", fontSize: "55px" }}>
+            Thanks for subscribing!
+          </h2>
+          <p>
+            A confirmation email has been sent to <span>{email}</span>. Please
+            open it and click the button inside to confirm your subscription.
+          </p>
+          <button>Dismiss message</button>
         </div>
       )}
     </div>
