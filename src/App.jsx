@@ -52,20 +52,7 @@ function App() {
               }}
             />
           </label>
-          <button
-            style={{
-              width: "100%",
-              height: "40px",
-              borderRadius: "7px",
-              border: "none",
-              fontWeight: "bold",
-              color: "white",
-              backgroundColor: "hsl(234, 29%, 20%)",
-              cursor: "pointer",
-            }}
-          >
-            Subscribe to monthly newsletter
-          </button>
+          <button>Subscribe to monthly newsletter</button>
         </div>
       </div>
     </div>
